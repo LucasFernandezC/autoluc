@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es"><!-- esto es un comentario -->
+<head> <!--cabecera. datos del sitio, no visibles-->
+    <meta charset="UTF-8"><!-- compatibilidad con ñ y caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configuracion para adpatacion a dispositivos-->
+    <title>AutoLuc</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/newStyles.css">
+
+</head>
+
+<body class="principal">
+    <header class="cabeza">
+        <a href="index.html" class="headerimage"><img src="images/logo.jpg" alt="Logo" title="Logo"></a>
+        <h1>AutoLuc</h1>
+        <nav>
+            <ul class="menunav">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="pages/vende.html">Cotiza tu auto</a> </li>
+                <li> <a href="pages/review.html">Test</a> </li>
+                <li> <a href="pages/nosotros.html">Conocenos</a> </li>
+                <li> <a href="pages/contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cuerpo">
+        
+            <div class="busqueda__barra">
+                <input type="search" name="busq" id="" placeholder="Busca tu auto"> 
+            </div>
+            
+            <form action="" class="busqueda__form">
+                <label for="marca">Marca</label> 
+                <select name="marca" id="" class="busqueda__select">
+                    <option value="fo">FORD</option>
+                    <option value="vw">VW</option>
+                    <option value="re">RENAULT</option>
+                    <option value="to">TOYOTA</option>
+                </select>         
+                <label for="tipo">Tipo</label> 
+                <select name="tipo" id="" class="busqueda__select">
+                    <option value="co">Coupe</option>
+                    <option value="hb">Hatchback</option>
+                    <option value="se">Sedan</option>
+                    <option value="ca">Camioneta</option>
+                </select>
+                <label for="ptas">Cantidad de Puertas</label> 
+                <select name="ptas" id="" class="busqueda__select">
+                    <option value="3p">3 ptas</option>
+                    <option value="4p">4 ptas</option>
+                    <option value="5p">5 ptas</option>
+                </select>       
+                <label for="comb">Combustible</label> 
+                <select name="comb" id="" class="busqueda__select">
+                    <option value="na">Nafta</option>
+                    <option value="di">Diesel</option>
+                    <option value="gn">GNC</option>
+                </select>
+                <label for="conf">Aire acondicionado</label> 
+                <input type="checkbox" name="conf" id="" value="ac" class="busqueda__check"> 
+                <label for="conf">Techo corredizo</label> 
+                <input type="checkbox" name="conf" id="" value="tc" class="busqueda__check"> 
+                <label for="conf">ESP</label> 
+                <input type="checkbox" name="conf" id="" value="es"class="busqueda__check"> 
+                <input type="reset" value="Restablecer" class="busqueda__button">
+                <input type="submit" value="Buscar" class="busqueda__button">
+            </form>
+            <article id="results" class="busqueda__results">
+                <table class="busqueda__results__table">
+                    <th>Marca</th>
+                    <th>Año</th>
+                    <th>Cantida de puertas</th>
+                    <th>Combustible</th>
+                    <th>Estado</th>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Muy bueno</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Igual a 0km</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Mediocre</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Bueno</td>
+                    </tr>
+                    <tr>
+                        <td>VW</td>
+                        <td>2018</td>
+                        <td>3 puertas</td>
+                        <td>diesel</td>
+                        <td>Igual a 0km</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Bueno</td>
+                    </tr>
+                    <tr>
+                        <td>VW</td>
+                        <td>2018</td>
+                        <td>3 puertas</td>
+                        <td>diesel</td>
+                        <td>Bueno</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Igual a 0km</td>
+                    </tr>
+                    <tr>
+                        <td>VW</td>
+                        <td>2018</td>
+                        <td>3 puertas</td>
+                        <td>diesel</td>
+                        <td>Mediocre</td>
+                    </tr>
+                    <tr>
+                        <td>Ford</td>
+                        <td>2016</td>
+                        <td>5 puertas</td>
+                        <td>Nafta</td>
+                        <td>Excelente</td>
+                    </tr>
+                    <tr>
+                        <td>VW</td>
+                        <td>2018</td>
+                        <td>3 puertas</td>
+                        <td>diesel</td>
+                        <td>Muy bueno</td>
+                    </tr>
+                    <tr>
+                        <td>Fiat</td>
+                        <td>2020</td>
+                        <td>4 puertas</td>
+                        <td>GNC</td>
+                        <td>Bueno</td>
+                    </tr>
+                </table>
+            </article>
+    </main>
+    <footer class="pie">
+        <h4>OPINIONES</h4>
+		<h4>REDES</h4>
+        <div id="whatsapp-icon" class="whatsapp" >
+            <a href="https://api.whatsapp.com/send?phone=+34662681XXX">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png" width="50" height="50"></a>
+        </div>
+		<h4><a href="pages/contacto.html">Contacto</a></h4>
+
+    </footer>
+
+</body>
+</html>

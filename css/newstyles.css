@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"); 
+*{
+        margin: 0;
+        padding: 0;
+        font-family: "Gloria Hallelujah", cursive;
+}
+
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "cab cab cab"
+    "cue cue cue"
+    "pie pie pie"
+    
+    ;
+}
+
+.cabeza{
+grid-area: cab;
+display: grid;
+grid-template-columns: 0.5fr 1fr;
+grid-template-rows: auto;
+grid-template-areas:  
+    "cabimg cabh1"
+    "cabimg cabnav"
+;
+background-color: aqua;
+
+}
+
+.headerimage{
+            grid-area: cabimg;
+            align-self: center;
+            margin-left: 7%;
+}
+
+.headerimage img{
+                border-radius: 3%;
+}
+
+.cabeza h1{
+            grid-area: cabh1;
+            text-align: end;
+            font-size: 400%;
+            padding-top: 2%;
+            padding-right: 8%;
+
+}
+
+.menunav{
+            grid-area: cabnav;
+            justify-content:end;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            justify-self: center;
+}
+
+.menunav a{
+    text-decoration: none;
+}
+
+.menunav li{
+    font-weight: bold;
+    list-style-type: none;
+    
+}
+
+.cuerpo{
+        grid-area: cue;
+        background-color: bisque;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:  
+        "cuetext cuetext"
+        "cuesel cuetd"
+;
+}
+
+.busqueda__barra{
+                grid-area: cuetext;
+                margin: 1% 5% 1% 5%;
+                width: auto;
+                height: 30px; 
+}
+
+.busqueda__barra:hover{
+    
+    width: 30%;
+    height: 30px; 
+    font-weight: bold;
+
+}
+
+.busqueda__form label{
+                        margin-left: 5%;
+                        font-size: small;
+                        font-weight: bold;
+}
+
+.busqueda__form{
+                grid-area: cuesel;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+}
+
+.busqueda__select{
+                    width: fit-content;
+                    font-size: smaller;
+                    font-style: italic;
+}
+
+
+.busqueda__check{
+                    font-size:smaller;
+}
+
+.busqueda__button{
+                    margin: 2% 2% ;
+                    width:40%;
+                    height:max-content;
+                    font-weight: bold;
+}
+
+.busqueda__results{
+                    grid-area: cuetd;
+                    margin: 0.5%;
+                    font-size: large;
+                    justify-items: center;
+                    align-items: center;
+}
+
+.busqueda__results__table{
+                            width: 80%;
+                            height: 80%;
+                            border-style: solid;
+                            border: 0.5%;
+                            border-color: #49274a;
+                            border-collapse: collapse;
+
+}
+
+.busqueda__results__table th{
+                            border-style:hidden;
+                            border: 50%;
+                            background: radial-gradient(#f4decb, #f8eee7);
+                            color: #49274a;
+}
+
+.busqueda__results__table td{
+                            border-style: hidden;
+                            background: radial-gradient(#f4decb, #f8eee7);
+                            text-align: center;
+                            border-color: black;
+                            color: #49274a;
+}
+
+.pie{
+        grid-area: pie;
+        background-color: blue;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        padding: 5%;
+
+}
+
+
+.whatsapp{
+            position:fixed; 
+            right:10px; 
+            bottom:10px; 
+            text-align:center; 
+            padding:3px;
+}
+
+@media screen and (max-width: 500px) {
+    .principal{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "cab"
+                "cue"
+                "pie"
+                ;
+    }
+    .cabeza{
+            display: flex;
+            flex-direction: column;
+    }
+    
+    .cuerpo{
+            grid-area: cue;
+            display: flex;
+            flex-direction: column;
+    }
+    .pie{
+        grid-area: pie;
+    }
+    
+}
