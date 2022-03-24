@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es"><!-- esto es un comentario -->
+<head> <!--cabecera. datos del sitio, no visibles-->
+    <meta charset="UTF-8"><!-- compatibilidad con ñ y caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configuracion para adpatacion a dispositivos-->
+    <title>AutoLuc</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/newStyles.css">
+</head>
+<body class="principalvende">
+    <header class="cabeza">
+        <a href="../index.html" class="headerimage"><img src="../images/logo.jpg" alt="Logo" title="Logo"></a>
+        <h1>AutoLuc</h1>
+        <nav>
+            <ul class="menunav">
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="vende.html">Cotiza tu auto</a> </li>
+                <li> <a href="review.html">Test</a> </li>
+                <li> <a href="nosotros.html">Conocenos</a> </li>
+                <li> <a href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cuerpovende">
+        
+            <h2>Te ayudamos a vender tu auto al mejor precio sin moverte de tu casa</h2>
+            <form action="">
+                <label for="nombre"> Ingrese Nombre y Apellido</label>
+                <input type="text" placeholder="Nombre y apellido" name="nombre" class="formvende__inputtext">
+                <label for="mail"> Ingrese email</label>
+                <input type="email" name="mail" placeholder="ingrese email" class="formvende__inputtext">
+                <label for="telefono">Ingrese su numero de telefono</label>
+                <input type="tel" name="telefono" id="" placeholder="Sin el 15" class="formvende__inputtext">
+                <label for="marca">Marca</label> 
+                <select name="marca" id="" class="formvende__select">
+                    <option value="fo">FORD</option>
+                    <option value="vw">VW</option>
+                    <option value="re">RENAULT</option>
+                    <option value="to">TOYOTA</option>
+                </select>         
+                <label for="tipo">Tipo</label> 
+                <select name="tipo" id="" class="formvende__select">
+                    <option value="co">Coupe</option>
+                    <option value="hb">Hatchback</option>
+                    <option value="se">Sedan</option>
+                    <option value="ca">Camioneta</option>
+                </select>
+                <label for="ptas">Cantidad de Puertas</label> 
+                <select name="ptas" id="" class="formvende__select">
+                    <option value="3p">3 ptas</option>
+                    <option value="4p">4 ptas</option>
+                    <option value="5p">5 ptas</option>
+                </select>       
+                <label for="comb">Combustible</label> 
+                <select name="comb" id="" class="formvende__select">
+                    <option value="na">Nafta</option>
+                    <option value="di">Diesel</option>
+                    <option value="gn">GNC</option>
+                </select>
+                <label for="conf">Aire acondicionado</label> 
+                <input type="checkbox" name="conf" id="" value="ac" class="formvende__check"> 
+                <label for="conf">Techo corredizo</label> 
+                <input type="checkbox" name="conf" id="" value="tc" class="formvende__check"> 
+                <label for="conf">ESP</label> 
+                <input type="checkbox" name="conf" id="" value="es" class="formvende__check"> 
+                <label for="año">Seleccion el año</label>
+                <select name="año" id="" class="formvende__select">
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                </select>
+                <label for="km">Ingrese los Kilometros</label>  
+                <input type="number" name="km" id="" class="formvende__inputtext">
+                <label for="foto">Subir foto</label>
+                <input type="file" name="foto" id="" class="formvende__inputtext">
+                <input type="reset" value="Restablecer" class="formvende__button">
+                <input type="submit" value="Publicar" class="formvende__button">
+            </form>
+        
+    </main>
+    <footer class="pie">
+        <h4>OPINIONES</h4>
+		<h4>REDES</h4>
+        <div id="whatsapp-icon" class="whatsapp" >
+            <a href="https://api.whatsapp.com/send?phone=+34662681XXX">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png" width="50" height="50"></a>
+        </div>
+		<h4><a href="contacto.html">Contacto</a></h4>
+
+    </footer>
+
+</body>
+</html>

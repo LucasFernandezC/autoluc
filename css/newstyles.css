@@ -2,33 +2,31 @@
 *{
         margin: 0;
         padding: 0;
-        font-family: "Gloria Hallelujah", cursive;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 .principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "cab cab cab"
-    "cue cue cue"
-    "pie pie pie"
-    
-    ;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "cab cab cab"
+            "cue cue cue"
+            "pie pie pie"
+            ;
 }
 
 .cabeza{
-grid-area: cab;
-display: grid;
-grid-template-columns: 0.5fr 1fr;
-grid-template-rows: auto;
-grid-template-areas:  
-    "cabimg cabh1"
-    "cabimg cabnav"
-;
-background-color: aqua;
-
+        grid-area: cab;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:  
+        "cabimg cabh1"
+        "cabimg cabnav"
+        ;
+        background-color: grey;
 }
 
 .headerimage{
@@ -43,11 +41,11 @@ background-color: aqua;
 
 .cabeza h1{
             grid-area: cabh1;
+            font-family: "Gloria Hallelujah";
             text-align: end;
             font-size: 400%;
             padding-top: 2%;
             padding-right: 8%;
-
 }
 
 .menunav{
@@ -61,41 +59,48 @@ background-color: aqua;
 }
 
 .menunav a{
-    text-decoration: none;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: large;
 }
 
 .menunav li{
-    font-weight: bold;
-    list-style-type: none;
-    
+            font-weight: bold;
+            list-style-type: none;
+            margin: 1%;
 }
 
 .cuerpo{
         grid-area: cue;
-        background-color: bisque;
+        background-color: white;
         display: grid;
         grid-template-columns: 0.2fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:  
         "cuetext cuetext"
         "cuesel cuetd"
-;
+        ;
 }
 
 .busqueda__barra{
                 grid-area: cuetext;
-                margin: 1% 5% 1% 5%;
-                width: auto;
-                height: 30px; 
+                display:flex;
+                flex-direction: row;
+                justify-content: left;
+                align-content: space-around;
+                padding: 3% 4%;
+                
 }
 
-.busqueda__barra:hover{
-    
-    width: 30%;
-    height: 30px; 
-    font-weight: bold;
-
+.busqueda__barra input{
+                        width: 40%;
+                        height: 150%;
+                        border-style:solid;
+                        background-color: aliceblue;
+                        font-style: italic;
 }
+
+
 
 .busqueda__form label{
                         margin-left: 5%;
@@ -108,33 +113,39 @@ background-color: aqua;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                align-items: center;
+                margin-bottom: 20%;
+
 }
 
 .busqueda__select{
                     width: fit-content;
                     font-size: smaller;
                     font-style: italic;
+                    align-self: flex-end;
+                    margin: 3%;
 }
 
 
 .busqueda__check{
                     font-size:smaller;
+                    align-self: flex-end;
+                    margin: 3%;
 }
 
 .busqueda__button{
-                    margin: 2% 2% ;
-                    width:40%;
+                    margin: 3% 2% ;
+                    width: 60%;
                     height:max-content;
                     font-weight: bold;
+                    align-self: center;
 }
 
 .busqueda__results{
                     grid-area: cuetd;
+                    display: flex;
                     margin: 0.5%;
                     font-size: large;
-                    justify-items: center;
-                    align-items: center;
+                    justify-content: center;
 }
 
 .busqueda__results__table{
@@ -142,36 +153,43 @@ background-color: aqua;
                             height: 80%;
                             border-style: solid;
                             border: 0.5%;
-                            border-color: #49274a;
-                            border-collapse: collapse;
-
+                            justify-content: center;
+                            align-content: center;
+                            margin-bottom: 5%;
 }
 
 .busqueda__results__table th{
                             border-style:hidden;
                             border: 50%;
-                            background: radial-gradient(#f4decb, #f8eee7);
-                            color: #49274a;
+                            background: rgb(255,255,255);
+                            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
+                            color: black;
 }
 
 .busqueda__results__table td{
                             border-style: hidden;
-                            background: radial-gradient(#f4decb, #f8eee7);
+                            background: rgb(255,255,255);
+                            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%);
                             text-align: center;
-                            border-color: black;
-                            color: #49274a;
+                            color: grey;
 }
 
 .pie{
         grid-area: pie;
-        background-color: blue;
+        background-color: grey;
+        color: aliceblue;
         display: flex;
         align-content: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 5%;
 
 }
 
+.pie a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: large;
+}
 
 .whatsapp{
             position:fixed; 
@@ -179,6 +197,197 @@ background-color: aqua;
             bottom:10px; 
             text-align:center; 
             padding:3px;
+}
+
+.principalcontacto{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "cab cab cab"
+                    "cuec cuec cuec"
+                    "pie pie pie"
+                    ;
+}
+.cuerpocontacto{
+                grid-area:cuec ;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-items: center;
+                align-items: center;
+}
+
+.cuerpocontacto h2{
+                    margin: 3%;
+                    font-size: xx-large;
+}
+
+.cuerpocontacto label{
+                        margin: 2%;
+}
+
+.cuerpocontacto form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-content: space-between;
+}
+
+.contacto__inputtext{
+                        margin: 2% 0%;
+                        font-style: italic;
+                        width: 100%;
+
+}
+
+.contacto__textarea{
+                    width: 100%;
+}
+
+.contacto__button {
+                    margin: 3% 2% ;
+                    width: 60%;
+                    height: 7%;
+                    font-weight: bold;
+                    align-self: center;
+}
+
+.principalnosotros{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "cab cab cab"
+                    ". cuen ."
+                    "pie pie pie"
+                    ;
+}
+.cuerponos{
+            grid-area: cuen;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+.nosotros{
+            margin: 2%;
+}
+
+.cuerponos p{
+                text-align: center;
+}
+
+.cuerponos h2{
+                text-align: center;
+                margin: 4%;
+}
+
+.principalvende{
+                display: grid;  
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "cab cab cab"
+                ". cuev ."
+                "pie pie pie"
+                ;
+}
+
+.cuerpovende{
+            grid-area: cuev;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+}
+.cuerpovende h2{
+                margin: 4%;
+                text-align: center;
+
+}
+
+.cuerpovende form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 2%;
+}
+
+
+.formvende__inputtext{
+                    margin: 2% 5% ;
+                    width: 400px;
+                    height: 35px; 
+                    color: black;
+}
+
+
+.formvende__select{
+                    margin:1% 0%; 
+                    font-size: smaller;
+                    font-style: italic;
+                    color: black;
+}
+
+.formvende__check{
+                    margin: 1% 0%;
+                    font-size:smaller;
+}
+
+.formvende__button{
+                    margin: 2%;
+                    width: 20%;
+                    height: 8%;
+                    font-weight: bold;
+}
+
+.principalreview{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "cab cab cab"
+                "cuer cuer cuer"
+                "pie pie pie"
+        ;
+}
+
+.cuerporeview{
+            grid-area: cuer;
+            display: flex;
+            flex-direction: column;
+}
+
+.cuerporeview h2{
+                text-align: center;
+                margin: 3% 1% 6% 1%;
+}
+
+.testers{
+            display: flex;
+            flex-direction: column;
+}
+.testers p{
+            text-align: center; 
+            margin: 2% 1%;
+}
+
+.testers h4{
+            text-align: center;
+            margin: 3% 1%;
+}
+
+.testers a{
+            text-align: center;
+
+}
+.testers img{
+            align-self: center;
+}
+
+.testers iframe{
+                align-self: center;
+                margin: 2% 1% ;
 }
 
 @media screen and (max-width: 500px) {
@@ -191,18 +400,63 @@ background-color: aqua;
                 "pie"
                 ;
     }
+    .principalcontacto{
+                        grid-template-columns: 1fr;
+                        grid-template-rows: auto;
+                        grid-template-areas: 
+                        "cab"
+                        "cuec"
+                        "pie"
+                        ;
+    }
+
+    .principalnosotros{
+                        grid-template-columns: 1fr;
+                        grid-template-rows: auto;
+                        grid-template-areas: 
+                        "cab"
+                        "cuen"
+                        "pie"
+                        ;
+        }
+
+    .principalvende{
+                    display: grid;
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "cab"
+                    "cuev"
+                    "pie"
+                    ;
+    }
+
+    .principalreview{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                    "cab"
+                    "cuer"
+                    "pie"
+                    ;
+    }
+
     .cabeza{
             display: flex;
             flex-direction: column;
     }
     
+    .cabeza h1{
+                text-align: center;
+    }
     .cuerpo{
             grid-area: cue;
             display: flex;
             flex-direction: column;
     }
     .pie{
-        grid-area: pie;
+            grid-area: pie;
     }
     
 }
