@@ -458,5 +458,14 @@
     .pie{
             grid-area: pie;
     }
-    
+    .busqueda__results__table{
+        justify-content: start;
+        
+}
+.busqueda__results__table th{
+                                font-size:x-small;
+}
+.busqueda__results__table td{
+                                font-size:x-small;
+}
 }
