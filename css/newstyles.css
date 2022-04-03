@@ -153,7 +153,7 @@
         margin: 5% 0%;
         display: flex;
         justify-content: center;
-
+        text-align: center;
 }
 
 .nosotrostestimoniales {
@@ -161,6 +161,7 @@
         flex-direction: column;
         align-content: center;
         align-items: center;
+        
 }
 
 .cuerponos p {
