@@ -272,8 +272,11 @@
         .busqueda__form{
                         text-align: center;
                         align-items: center;
+                        font-size: medium;
 }
-
+.busqueda__form__select{
+        font-size: small;
+}
         .busquedaresults{
                 flex-direction: row;
         }
