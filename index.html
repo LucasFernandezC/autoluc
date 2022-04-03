@@ -18,11 +18,11 @@
 
 <body class="container-fluid">
     <header class="cabeza row">
-        <div class="col-md-5 col-sm-12 float-start headimage">
+        <div class="col-lg-5 col-sm-12 float-start headimage">
             <a href="index.html" class="animate__animated animate__zoomInDown"><img src="images/logo.jpg"
                     class="rounded" alt="Logo" title="Logo"></a>
         </div>
-        <div class="col-md-7 col-sm-12 menudis">
+        <div class="col-lg-7 col-sm-12 menudis">
             <h1 class="animate__animated animate__rubberBand">AutoLuc</h1>
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
@@ -133,80 +133,117 @@
                     <input type="submit" value="Buscar" class="btn btn-primary">
                 </div>
             </form>
-            <article id="results" class="col-md-10 table-responsive">
-                <table class="table table-hover align-middle">
-                    <th>Foto</th>
-                    <th>Marca</th>
-                    <th>Año</th>
-                    <th>Cantida de puertas</th>
-                    <th>Comb</th>
-                    <th>Estado</th>
-                    <tr>
-                        <td><img src="images/ford.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>Ford</td>
-                        <td>2016</td>
-                        <td>5 puertas</td>
-                        <td>Nafta</td>
-                        <td>Muy bueno</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/ford.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>Ford</td>
-                        <td>2016</td>
-                        <td>5 puertas</td>
-                        <td>Nafta</td>
-                        <td>Igual a 0km</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/fiat.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>Fiat</td>
-                        <td>2009</td>
-                        <td>5 puertas</td>
-                        <td>Nafta</td>
-                        <td>Mediocre</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/ford.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>Ford</td>
-                        <td>2016</td>
-                        <td>5 puertas</td>
-                        <td>Nafta</td>
-                        <td>Bueno</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/vw.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>VW</td>
-                        <td>2018</td>
-                        <td>3 puertas</td>
-                        <td>diesel</td>
-                        <td>Igual a 0km</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/ford.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>Ford</td>
-                        <td>2016</td>
-                        <td>5 puertas</td>
-                        <td>Nafta</td>
-                        <td>Bueno</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/vw.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>VW</td>
-                        <td>2018</td>
-                        <td>3 puertas</td>
-                        <td>diesel</td>
-                        <td>Bueno</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/ford.jpg" class="busqueda__imagen img-fluid" alt=""></td>
-                        <td>Ford</td>
-                        <td>2016</td>
-                        <td>5 puertas</td>
-                        <td>Nafta</td>
-                        <td>Igual a 0km</td>
-                    </tr>
-
-                </table>
+            <article id="results" class="col-md-10">
+                <div class="busquedaresults">
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/ford.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ford 2016</h5>
+                                <p class="card-text">5 puertas, naftero, en excelente estado!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/vw.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">VW 2015</h5>
+                                <p class="card-text">3 puertas, GNC, unica mano! Veni a verlo!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/ford.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ford 2016</h5>
+                                <p class="card-text">5 puertas, naftero, en excelente estado!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/vw.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">VW 2015</h5>
+                                <p class="card-text">3 puertas, GNC, unica mano! Veni a verlo!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/fiat.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiat 2013</h5>
+                                <p class="card-text">5 puertas, naftero, en excelente estado!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/vw.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">VW 2015</h5>
+                                <p class="card-text">3 puertas, GNC, unica mano! Veni a verlo!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/ford.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ford 2016</h5>
+                                <p class="card-text">5 puertas, naftero, en excelente estado!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/fiat.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiat 2015</h5>
+                                <p class="card-text">3 puertas, GNC, unica mano! Veni a verlo!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/fiat.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiat 2013</h5>
+                                <p class="card-text">5 puertas, naftero, en excelente estado!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/vw.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">VW 2015</h5>
+                                <p class="card-text">3 puertas, GNC, unica mano! Veni a verlo!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/ford.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ford 2016</h5>
+                                <p class="card-text">5 puertas, naftero, en excelente estado!</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="">
+                        <article class="card busquedaresults__card" style="width: 18rem;">
+                            <img src="images/fiat.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fiat 2015</h5>
+                                <p class="card-text">3 puertas, GNC, unica mano! Veni a verlo!</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </article>
         </div>
     </main>
@@ -224,7 +261,7 @@
                 data-show-count="false">Follow @TwitterDev</a>
             <script async src="https://platform.twitter.com/widgets.js" target="_blank" charset="utf-8"></script>
             <a href="https://www.facebook.com" target="_blank" class=""><img src="images/facebook.png">
-            <a href="https://www.instagram.com" target="_blank" class=""><img src="images/instagram.png">
+                <a href="https://www.instagram.com" target="_blank" class=""><img src="images/instagram.png">
         </div>
         <div class="">
             <h4><a href="pages/contacto.html">Contacto</a></h4>
