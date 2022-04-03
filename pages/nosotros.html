@@ -1,56 +1,133 @@
 <!DOCTYPE html>
-<html lang="es"><!-- esto es un comentario -->
-<head> <!--cabecera. datos del sitio, no visibles-->
+<html lang="es">
+<!-- esto es un comentario -->
+
+<head>
+    <!--cabecera. datos del sitio, no visibles-->
     <meta charset="UTF-8"><!-- compatibilidad con ñ y caracteres especiales-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configuracion para adpatacion a dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--configuracion para adpatacion a dispositivos-->
     <title>AutoLuc</title>
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/newstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body class="principalnosotros">
-    <header class="cabeza">
-        <a href="../index.html" class="headerimage animate__animated animate__zoomInDown"><img src="../images/logo.jpg" alt="Logo" title="Logo"></a>
-        <h1 class="animate__animated animate__rubberBand">AutoLuc</h1>
-        <nav>
-            <ul class="menunav animate__animated animate__pulse">
-                <li> <a href="../index.html">Home</a> </li>
-                <li> <a href="vende.html">Cotiza tu auto</a> </li>
-                <li> <a href="review.html">Test</a> </li>
-                <li> <a href="nosotros.html">Conocenos</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
+
+<body class="container-fluid">
+    <header class="cabeza row">
+        <div class="col-md-5 col-sm-12 float-start headimage">
+            <a href="index.html" class="animate__animated animate__zoomInDown"><img src="../images/logo.jpg"
+                    class="rounded" alt="Logo" title="Logo"></a>
+        </div>
+
+        <div class="col-md-7 col-sm-12 menudis">
+            <h1 class="animate__animated animate__rubberBand">AutoLuc</h1>
+            <nav class="navbar navbar-expand-lg navbar-light menunav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="..."></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menunav" id="navbarNavAltMarkup">
+                        <div class="navbar-nav menulinks">
+                            <a class="nav-link active" aria-current="page" href="../index.html"
+                                style="color: aliceblue;">Home</a>
+                            <a class="nav-link" href="../pages/vende.html" style="color: aliceblue;">Cotiza tu auto</a>
+                            <a class="nav-link" href="../pages/review.html" style="color: aliceblue;">Test</a>
+                            <a class="nav-link" href="../pages/nosotros.html" style="color: aliceblue;">Conocenos</a>
+                            <a class="nav-link" href="../pages/contacto.html" style="color: aliceblue;">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="cuerponos">
+
+        <section class="nosotros container">
+            <div class="row">
+                <div class="col-md-5 nosotrostestimoniales">
+                    <h2>Testimoniales</h2>
+                    <p class="h1">Lo que opinan nuestros clientes</p>
+                    <img src="../images/puntaje.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7">
+                    <img src="../images/service.webp" class="nosotros__img" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6  nosotrosopiniones">
+                    <article class="card" style="width: 18rem;">
+                        <img src="../images/cliente2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Esteban y su opinion</h5>
+                            <p class="card-text">La verdad es que quede totalmente sorprendido por la atencion recibida en AutoLuc</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6  nosotrosopiniones">
+                    <article class="card col-md-6" style="width: 18rem;">
+                        <img src="../images/cliente1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">La experiencia de Fernando</h5>
+                            <p class="card-text">Fui con mi 208 y lo cambie al mejor precio en menos de 1 semana.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <h2>El porque de nuestro sitio</h2>
+        <p>Esta idea surgio de las malas experiencias vividas, tanto personalmente como de amigos. 
+        Nuestro objetivo es brindarte un servicio integral que te libere de todos los problemas que supone cambiar un auto en la Argentina. 
+        Nosotros nos vamos a encargar de que te lleves un auto confiable, sin pagar sumas exorbitantes y sin tener que estar preocupandote por los tramites.
+        Incluso vamos a estar ahi cuando ya estes disfrutano de tu auto, recordandote los service y mantenimientos.
+        La principal motivacion de todos los que formamos parte de AutoLuc es que siempre que pienses en cambiar tu auto vengas a visitarnos.
+        </p>
+
         <h2>Conoce al equipo detrás de AutoLuc</h2>
         <section class="nosotros">
-            <img src="../images/founder.jpg" alt="">
+            <img src="../images/founder.jpg" class="img-fluid" alt="">
             <p>
-                Fundador de AutoLuc 
+                Fundador de AutoLuc
             </p>
             <p>
                 Entusiasta de los autos
             </p>
         </section>
-        <section class="nosotros">
-            <h2>El porque de nuestro sitio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt, quos libero molestias ad sapiente facere excepturi reprehenderit saepe optio exercitationem dolore obcaecati natus vero aspernatur consectetur omnis veritatis hic!
-            Sint molestias modi incidunt nobis in, quos libero accusamus quibusdam cumque ut a pariatur sunt veniam corrupti eaque illum nihil fuga eum? Distinctio magnam amet, id totam hic dolorum porro!
-            Sint soluta dignissimos pariatur ut alias omnis optio tempora sapiente provident recusandae nobis harum, earum, quis eos. Quis mollitia soluta vitae, dicta excepturi voluptatibus. Praesentium quis asperiores similique corporis deserunt?</p>
-        </section>
+
     </main>
     <footer class="pie">
-        <h4>OPINIONES</h4>
-		<h4>REDES</h4>
-        <div id="whatsapp-icon" class="whatsapp animate__animated animate__backInDown" >
-            <a href="https://api.whatsapp.com/send?phone=+34662681XXX">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png" width="50" height="50"></a>
+        <div class="">
+            <h4>Veni a visitarnos</h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.593711038266!2d-58.583362184189184!3d-34.63970616691133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78bf32505fb%3A0xe418ebc82cd24990!2sDr.%20Luis%20G%C3%BCemes%20299-421%2C%20Villa%20Sarmiento%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1648941096780!5m2!1ses!2sar"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-		<h4><a href="contacto.html">Contacto</a></h4>
-
+        <div class="">
+            <h4>Estas son nuestras redes</h4>
+            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                data-show-count="false">Follow @TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" target="_blank" charset="utf-8"></script>
+            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png">
+                <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png">
+        </div>
+        <div class="">
+            <h4><a href="../pages/contacto.html">Contacto</a></h4>
+            <p>Dejanos tu consulta!</p>
+        </div>
     </footer>
+    <div id="whatsapp-icon" class="whatsapp animate__animated animate__backInDown">
+        <a href="https://api.whatsapp.com/send?phone=+34662681XXX">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/240px-WhatsApp.svg.png"
+                width="50" height="50"></a>
+    </div>
 
 </body>
+
 </html>
