@@ -62,13 +62,9 @@
 
 
 .pie {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
         background-color: grey;
         color: aliceblue;
-        padding: 4%;
+        padding: 0%;
         text-align: center;
 }
 
@@ -267,7 +263,7 @@
         .busquedaresults {
                 flex-direction: column;
         }
-
+        
 }
 
 
@@ -280,7 +276,7 @@
 
         .busqueda__barra {
                 margin: 1%;
-                width: 100%;
+                width: auto;
         }
 
         .busqueda__form {
@@ -304,6 +300,10 @@
 
         }
 
+        .menudis a{
+                font-size: small;
+                padding: 0rem;
+        }
         .headimage {
                 display: flex;
                 justify-content: center;
@@ -327,8 +327,6 @@
 
 
         .pie {
-                display: flex;
-                flex-direction: column;
                 justify-content: center;
                 justify-items: center;
                 justify-self: center;
