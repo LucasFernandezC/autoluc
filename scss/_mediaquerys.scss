@@ -1,0 +1,57 @@
+@media screen and (max-width: $tamcel) {
+        .busquedaresults {
+                flex-direction: column;
+        }
+}
+
+@media screen and (max-width: $tampad) {
+        .busqueda__imagen {
+                height: 50px;
+                width: 50px;
+        }
+        .busqueda__barra {
+                margin: 1%;
+                width: auto;
+        }
+        .busqueda__form {
+                text-align: center;
+                align-items: center;
+                font-size: medium;
+        }
+        .busqueda__form__select {
+                font-size: small;
+        }
+        .busquedaresults {
+                flex-direction: row;
+        }
+        .menudis {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                a{
+                font-size: small;
+                padding: 0rem;
+                }
+        }
+        .headimage {
+                display: flex;
+                justify-content: center;
+        }
+        .formvende__inputtexttext {
+                width: 250px;
+        }
+        .cabeza {
+                display: flex;
+                flex-direction: row;
+                h1 {
+                font-size: xx-large;
+                }
+        }
+        .pie {
+                justify-content: center;
+                justify-items: center;
+                justify-self: center;
+                text-align: center;
+        }
+
+}

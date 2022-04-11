@@ -1,0 +1,27 @@
+.busqueda__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: flex-end;
+}
+
+.busqueda__barra {
+    margin: 3%;
+    width: 50%;
+}
+
+.busqueda__imagen {
+    width: 150px;
+    height: 150px;
+}
+
+.busquedaresults {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.busquedaresults__card {
+    margin: 3% 0%;
+}

@@ -1,0 +1,45 @@
+.cuerponos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    p {
+    text-align: center;
+    }
+    h2 {
+    text-align: center;
+    margin: 4%;
+    }
+}
+
+.nosotros {
+    margin: 2%;
+    h2 {
+        color: rgb(17, 89, 223);
+        font-weight: bolder;
+    }
+}
+
+.nosotros__img {
+    width: 100%;
+    height: 100%;
+}
+
+.nosotrosopiniones {
+    margin: 5% 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nosotrostestimoniales {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+}
+
+
+
+
