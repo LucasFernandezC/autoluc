@@ -10,12 +10,12 @@
                 width: 50px;
         }
         .busqueda__barra {
-                margin: 1%;
+                margin: map-get($margenes, marg1);
                 width: auto;
         }
         .busqueda__form {
-                text-align: center;
-                align-items: center;
+                text-align: map-get($alinea, centro);
+                align-items: map-get($alinea, centro);
                 font-size: medium;
         }
         .busqueda__form__select {
@@ -25,8 +25,7 @@
                 flex-direction: row;
         }
         .menudis {
-                display: flex;
-                flex-direction: row;
+                @include dflex(flex, row,wrap)
                 justify-content: space-around;
                 a{
                 font-size: small;
@@ -34,15 +33,14 @@
                 }
         }
         .headimage {
-                display: flex;
+                @include dflex(flex, column,wrap)
                 justify-content: center;
         }
         .formvende__inputtexttext {
                 width: 250px;
         }
         .cabeza {
-                display: flex;
-                flex-direction: row;
+                @include dflex(flex, row,wrap)
                 h1 {
                 font-size: xx-large;
                 }

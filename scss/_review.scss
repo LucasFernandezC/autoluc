@@ -1,9 +1,7 @@
 .cuerporeview {
-
-    display: flex;
-    flex-direction: column;
+    @include dflex(flex, column,wrap)
     h2 {
-    text-align: center;
+    text-align: map-get($alinea, centro);
     margin: 3% 1% 6% 1%;
     }
 }

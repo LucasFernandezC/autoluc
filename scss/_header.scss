@@ -1,14 +1,14 @@
 .cabeza {
     background-color: grey;
         img {
-            margin: 1%;
+            margin: map-get($margenes, marg1);
         }
         h1 {    
             font-family: "Gloria Hallelujah";
             text-align: end;
             font-size: 400%;
-            padding-top: 2%;
-            padding-right: 2%;
+            padding-top: map-get($margenes, marg2);
+            padding-right: map-get($margenes, marg2);
         }
 }
 .menunav {

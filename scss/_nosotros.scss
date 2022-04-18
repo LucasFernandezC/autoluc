@@ -1,42 +1,36 @@
 .cuerponos {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    @include dflex(flex, column,wrap)
+    justify-items: map-get($alinea, centro);
+    align-items: map-get($alinea, centro);
     p {
-    text-align: center;
+    text-align: map-get($alinea, centro);
     }
     h2 {
-    text-align: center;
-    margin: 4%;
+    text-align: map-get($alinea, centro);
+    margin: map-get($margenes, marg4);
     }
 }
-
 .nosotros {
-    margin: 2%;
+    margin: map-get($margenes, marg2);
     h2 {
         color: rgb(17, 89, 223);
         font-weight: bolder;
     }
 }
-
 .nosotros__img {
     width: 100%;
     height: 100%;
 }
-
 .nosotrosopiniones {
-    margin: 5% 0%;
+    margin: map-get($margenes, marg5) map-get($margenes, marg0);
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: map-get($alinea, centro);
+    text-align: map-get($alinea, centro);;
 }
-
 .nosotrostestimoniales {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+    @include dflex(flex, column,wrap)
+    align-content: map-get($alinea, centro);;
+    align-items: map-get($alinea, centro);;
     
 }
 

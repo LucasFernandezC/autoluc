@@ -1,7 +1,7 @@
 .pie {
     background-color: grey;
     color: aliceblue;
-    padding: 0%;
+    padding: map-get($margenes, marg0);
     text-align: center;
     img {
     width: 30px;
@@ -13,7 +13,7 @@
     font-size: large;
     }
     h4 {
-    padding: 2%;
+    padding: map-get($margenes, marg2);
     }
 }
 

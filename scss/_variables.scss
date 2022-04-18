@@ -8,3 +8,24 @@
 
 $tampad: 770px;
 $tamcel: 500px;
+
+$margenes: (
+        marg0: 0%,
+        marg1: 1%,
+        marg2: 2%,
+        marg3: 3%,
+        marg4: 4%,
+        marg5: 5%
+);
+
+$alinea: (
+        centro: center,
+        inicio: start,
+        fin: end
+);
+
+@mixin dflex($flex,$direccion,$wrap) {
+        display: $flex;
+        flex-direction: $direccion;
+        flex-wrap: $wrap;
+}

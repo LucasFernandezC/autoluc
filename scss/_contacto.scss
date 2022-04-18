@@ -1,32 +1,30 @@
 
 .cuerpocontacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+    @include dflex(flex, column,wrap)
+    justify-items: map-get($alinea, centro);
+    align-items: map-get($alinea, centro);
+    text-align: map-get($alinea, centro);
     h2 {
-    margin: 3%;
+    margin: map-get($margenes, marg3);
     font-size: xx-large;
     }
     label {
-    margin: 2%;
+    margin: map-get($margenes, marg2);
     }
     form {
-    display: flex;
-    flex-direction: column;
+    @include dflex(flex, column,wrap)
     justify-content: space-evenly;
     align-content: space-between;
     }
 }
-.contacto__inputtext {
-    margin: 2% 0%;
-    font-style: italic;
-    width: 100%;
-}
 
 .contacto__textarea {
     width: 100%;
-    margin: 3% 0%;
+    margin: map-get($margenes, marg2) map-get($margenes, marg0);
+}
+
+.contacto__inputtext {
+    @extend .contacto__textarea;
+    font-style: italic;
+    
 }

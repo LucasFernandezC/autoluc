@@ -1,39 +1,30 @@
 .vende{
     h2 {
-    text-align: center;
-    margin: 4% 0%;
+    text-align: map-get($alinea, centro);
+    margin: map-get($margenes, marg4) map-get($margenes, marg0);
     }
 }
-
 .formvende {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-
+    @include dflex(flex, column,wrap)
+    align-items: map-get($alinea, centro);
+    text-align: map-get($alinea, centro);
 }
-
 .formvende__inputtext {
-    margin: 1% 5%;
+    margin: map-get($margenes, marg1) map-get($margenes, marg5);
     color: black;
     font-size: medium;
 }
-
 .formvende__inputtexttext {
-
     width: 350px;
 }
 
-.formvende__select {
-    margin: 1% 0%;
+.formvende__check {
+    margin: map-get($margenes, marg1) map-get($margenes, marg0);
     font-size: smaller;
+}
+.formvende__select {
+    @extend .formvende__check;
     font-style: italic;
     width: 150px;
     color: black;
-}
-
-.formvende__check {
-    margin: 1% 0%;
-    font-size: smaller;
 }
