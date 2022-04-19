@@ -33,7 +33,7 @@
                 }
         }
         .headimage {
-                @include dflex(flex, column,wrap)
+                @include dflex(flex, row,wrap)
                 justify-content: center;
         }
         .formvende__inputtexttext {
