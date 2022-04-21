@@ -20,6 +20,18 @@
     
 }
 
+.cuerpocontacto__acordion{
+                        h2{
+                            color: rgb(49, 79, 247);
+                            background-color: green;
+                        }
+                        button{
+                            color: rgb(49, 79, 247);
+                            font-weight: bolder;
+                            
+                            }
+}
+
 .contacto__textarea {
     width: 100%;
     margin: map-get($margenes, marg2) map-get($margenes, marg0);
