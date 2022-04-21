@@ -5,7 +5,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .pie {
-  background-color: grey;
+  background-color: #314ff7;
   color: aliceblue;
   padding: 0%;
   text-align: center; }
@@ -17,7 +17,8 @@
     color: aliceblue;
     font-size: large; }
   .pie h4 {
-    padding: 2%; }
+    padding: 2%;
+    font-weight: bold; }
 
 .whatsapp {
   position: fixed;
@@ -27,20 +28,37 @@
   padding: 3px; }
 
 .cabeza {
-  background-color: grey; }
+  background-color: #314ff7; }
   .cabeza img {
     margin: 1%; }
   .cabeza h1 {
-    font-family: "Gloria Hallelujah";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: end;
+    align-content: end;
     font-size: 400%;
     padding-top: 2%;
     padding-right: 2%; }
+
+.menudis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: flex-end; }
 
 .menunav {
   font-weight: bold;
   justify-content: end;
   text-align: end; }
+
+.cuerporeview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .cuerporeview h2 {
+    text-align: center;
+    margin: 3% 1% 3% 1%;
+    font-weight: bolder; }
 
 .testers {
   display: flex;
@@ -51,22 +69,16 @@
     margin: 2% 1%; }
   .testers h4 {
     text-align: center;
-    margin: 3% 1%; }
+    margin: 3% 1%;
+    font-weight: bold;
+    color: #1159df; }
   .testers a {
     text-align: center; }
   .testers img {
     align-self: center; }
   .testers iframe {
     align-self: center;
-    margin: 2% 1%; }
-
-.cuerporeview {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-  .cuerporeview h2 {
-    text-align: center;
-    margin: 3% 1% 6% 1%; }
+    margin: 2% 0%; }
 
 .cuerpocontacto {
   display: flex;
@@ -77,7 +89,8 @@
   text-align: center; }
   .cuerpocontacto h2 {
     margin: 3%;
-    font-size: xx-large; }
+    font-size: xx-large;
+    font-weight: bold; }
   .cuerpocontacto label {
     margin: 2%; }
   .cuerpocontacto form {
@@ -104,12 +117,13 @@
     text-align: center; }
   .cuerponos h2 {
     text-align: center;
-    margin: 4%; }
+    margin: 4%;
+    color: #314ff7;
+    font-weight: bolder; }
 
 .nosotros {
   margin: 2%; }
   .nosotros h2 {
-    color: #1159df;
     font-weight: bolder; }
 
 .nosotros__img {
@@ -129,9 +143,15 @@
   align-content: center;
   align-items: center; }
 
-.vende h2 {
-  text-align: center;
-  margin: 4% 0%; }
+.vende {
+  align-items: center;
+  justify-items: center; }
+  .vende h2 {
+    text-align: center;
+    margin: 4% 0%; }
+  .vende img {
+    border-radius: 5px;
+    margin: auto; }
 
 .formvende {
   display: flex;
@@ -204,10 +224,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: end; }
     .menudis a {
       font-size: small;
       padding: 0rem; }
+  .vende img {
+    display: none; }
   .headimage {
     display: flex;
     flex-direction: row;
@@ -225,4 +247,7 @@
     justify-content: center;
     justify-items: center;
     justify-self: center;
-    text-align: center; } }
+    text-align: center; }
+  .testers iframe {
+    width: auto;
+    height: auto; } }

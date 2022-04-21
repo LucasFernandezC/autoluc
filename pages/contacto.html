@@ -8,8 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--configuracion para adpatacion a dispositivos-->
-    <meta name="description" content="Estamos acá para evacuar todas tus dudas y que, cuando llegue el momento, tengas total tranquilidad en el proceso del cambio de tu auto">
-    <meta name="keywords" content="agencia, auto, autos, calidad, experiencia, garantizados, autoluc, contacto, contactate, mensaje">
+    <meta name="description"
+        content="Estamos acá para evacuar todas tus dudas y que, cuando llegue el momento, tengas total tranquilidad en el proceso del cambio de tu auto">
+    <meta name="keywords"
+        content="agencia, auto, autos, calidad, experiencia, garantizados, autoluc, contacto, contactate, mensaje">
     <title>AutoLuc - Contactate con nosotros para evacuar todas tus dudas!</title>
     <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -26,7 +28,6 @@
         </div>
 
         <div class="col-lg-7 col-sm-12 menudis">
-            <h1 class="animate__animated animate__rubberBand">AutoLuc</h1>
             <nav class="navbar navbar-expand-lg navbar-light menunav">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="..."></a>
@@ -49,23 +50,72 @@
             </nav>
         </div>
     </header>
-    <main class="cuerpocontacto">
-        <h2>Contactese con nosotros</h2>
-        <form class="form-control-lg" action="">
-            <label for="nombre"> Ingrese Nombre y Apellido</label>
-            <input type="text" placeholder="Nombre y apellido" name="nombre" class="contacto__inputtext">
-            <label for="mail"> Ingrese email</label>
-            <input type="email" name="mail" placeholder="ingrese email" class="contacto__inputtext">
-            <label for="telefono">Ingrese su número de teléfono</label>
-            <input type="tel" name="telefono" id="" placeholder="Sin el 15" class="contacto__inputtext">
-            <label for="comentario">Déjenos su mensaje a continuación:</label>
-            <textarea name="comentario" id="" cols="30" rows="10" class="contacto__textarea"></textarea>
-            <div class="btn-group-vertical gap-3">
-                <input type="submit" value="Enviar formulario" class="btn btn-primary">
-                <input type="reset" value="Resetear formulario" class="btn btn-secondary">
+    <main class="row">
+        <div class="cuerpocontacto col-lg-6 col-sm-12">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion" id="pregfrec">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Que papeles del auto tengo que presentar para poder poner a la venta mi auto?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#pregfrec">
+                        <div class="accordion-body">
+                            Solo vamos a necesitar el titulo y la cedula verde acompañada del DNI del titular.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Como puedo pagar la compra de mi auto?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#pregfrec">
+                        <div class="accordion-body">
+                            Solo aceptamos pago a traves de transferencia bancaria.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Que pasa si encuentro un defecto en mi auto y quiero devolverlo?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#pregfrec">
+                        <div class="accordion-body">
+                            En AutoLuc te damos 10 dias para que pruebes tu nuevo auto y si no te gusta te devolvemos el
+                            dinero!
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
-
+        </div>
+        <div class="col-lg-6 col-sm-12 cuerpocontacto">
+            <h2>Contactese con nosotros</h2>
+            <form class="form-control-lg" action="">
+                <label for="nombre"> Ingrese Nombre y Apellido</label>
+                <input type="text" placeholder="Nombre y apellido" name="nombre" class="contacto__inputtext">
+                <label for="mail"> Ingrese email</label>
+                <input type="email" name="mail" placeholder="ingrese email" class="contacto__inputtext">
+                <label for="telefono">Ingrese su número de teléfono</label>
+                <input type="tel" name="telefono" id="" placeholder="Sin el 15" class="contacto__inputtext">
+                <label for="comentario">Déjenos su mensaje a continuación:</label>
+                <textarea name="comentario" id="" cols="30" rows="10" class="contacto__textarea"></textarea>
+                <div class="btn-group-vertical gap-3">
+                    <input type="submit" value="Enviar formulario" class="btn btn-primary">
+                    <input type="reset" value="Resetear formulario" class="btn btn-secondary">
+                </div>
+            </form>
+        </div>
     </main>
     <footer class="pie row">
         <div class="col-md-4 col-sm-12">
@@ -77,11 +127,13 @@
         </div>
         <div class="col-md-4 col-sm-12">
             <h4>Estas son nuestras redes</h4>
-            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png" alt="Logo de Facebook">
-            <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png" alt="Logo de Instagram">
-            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png"
+                    alt="Logo de Facebook">
+                <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png"
+                        alt="Logo de Instagram">
+                    <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
                         data-show-count="false">Follow @TwitterDev</a>
-            <script async src="https://platform.twitter.com/widgets.js" target="_blank"
+                    <script async src="https://platform.twitter.com/widgets.js" target="_blank"
                         charset="utf-8"></script>
         </div>
         <div class="col-md-4 col-sm-12">

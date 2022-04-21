@@ -1,5 +1,5 @@
 .pie {
-    background-color: grey;
+    background-color: rgb(49, 79, 247);
     color: aliceblue;
     padding: map-get($margenes, marg0);
     text-align: center;
@@ -14,6 +14,7 @@
     }
     h4 {
     padding: map-get($margenes, marg2);
+    font-weight: bold;
     }
 }
 

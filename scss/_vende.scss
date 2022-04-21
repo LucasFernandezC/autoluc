@@ -1,11 +1,17 @@
 .vende{
+    align-items: center;
+    justify-items: center;
     h2 {
     text-align: map-get($alinea, centro);
     margin: map-get($margenes, marg4) map-get($margenes, marg0);
     }
+    img{
+        border-radius: 5px;
+        margin: auto;
+    }
 }
 .formvende {
-    @include dflex(flex, column,wrap)
+    @include dflex(flex, column,wrap);
     align-items: map-get($alinea, centro);
     text-align: map-get($alinea, centro);
 }

@@ -1,7 +1,32 @@
 .cuerporeview {
-    @include dflex(flex, column,wrap)
+    @include dflex(flex, column,wrap);
     h2 {
     text-align: map-get($alinea, centro);
-    margin: 3% 1% 6% 1%;
+    margin: 3% 1% 3% 1%;
+    font-weight: bolder;
+    
+    }
+}
+.testers {
+    @include dflex(flex, column,nowrap);
+    p {
+    text-align: map-get($alinea, centro);
+    margin: map-get($margenes, marg2) map-get($margenes, marg1);
+    }
+    h4 {
+    text-align: map-get($alinea, centro);
+    margin: map-get($margenes, marg3) map-get($margenes, marg1);
+    font-weight: bold;
+    color: rgb(17, 89, 223);    
+    }
+    a {
+    text-align: map-get($alinea, centro);
+    }
+    img {
+    align-self: map-get($alinea, centro);
+    }
+    iframe {
+    align-self: map-get($alinea, centro);
+    margin: map-get($margenes, marg2) map-get($margenes, marg0);
     }
 }

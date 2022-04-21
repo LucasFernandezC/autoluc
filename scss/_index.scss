@@ -1,5 +1,5 @@
 .busqueda__form {
-    @include dflex(flex, column,wrap)
+    @include dflex(flex, column,wrap);
     justify-content: start;
     align-content: flex-end;
 }
@@ -12,7 +12,7 @@
     height: 150px;
 }
 .busquedaresults {
-    @include dflex(flex, row,wrap)
+    @include dflex(flex, row,wrap);
     justify-content: space-evenly;
 }
 .busquedaresults__card {

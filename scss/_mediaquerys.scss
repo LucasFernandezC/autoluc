@@ -25,22 +25,28 @@
                 flex-direction: row;
         }
         .menudis {
-                @include dflex(flex, row,wrap)
-                justify-content: space-around;
+                @include dflex(flex, row,wrap);
+                justify-content: end;
                 a{
                 font-size: small;
                 padding: 0rem;
                 }
         }
+        .vende{
+                img{
+                        
+                        display: none; 
+                }
+        }
         .headimage {
-                @include dflex(flex, row,wrap)
+                @include dflex(flex, row,wrap);
                 justify-content: center;
         }
         .formvende__inputtexttext {
                 width: 250px;
         }
         .cabeza {
-                @include dflex(flex, row,wrap)
+                @include dflex(flex, row,wrap);
                 h1 {
                 font-size: xx-large;
                 }
@@ -51,5 +57,11 @@
                 justify-self: center;
                 text-align: center;
         }
-
+        .testers{
+                iframe {
+                        width: auto;
+                        height: auto;
+                        }
+        }
+        
 }

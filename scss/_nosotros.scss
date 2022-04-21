@@ -1,5 +1,5 @@
 .cuerponos {
-    @include dflex(flex, column,wrap)
+    @include dflex(flex, column,wrap);
     justify-items: map-get($alinea, centro);
     align-items: map-get($alinea, centro);
     p {
@@ -8,12 +8,13 @@
     h2 {
     text-align: map-get($alinea, centro);
     margin: map-get($margenes, marg4);
+    color: rgb(49, 79, 247);
+    font-weight: bolder;
     }
 }
 .nosotros {
     margin: map-get($margenes, marg2);
     h2 {
-        color: rgb(17, 89, 223);
         font-weight: bolder;
     }
 }
@@ -28,9 +29,9 @@
     text-align: map-get($alinea, centro);;
 }
 .nosotrostestimoniales {
-    @include dflex(flex, column,wrap)
-    align-content: map-get($alinea, centro);;
-    align-items: map-get($alinea, centro);;
+    @include dflex(flex, column,wrap);
+    align-content: map-get($alinea, centro);
+    align-items: map-get($alinea, centro);
     
 }
 
