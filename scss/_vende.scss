@@ -4,6 +4,7 @@
     h2 {
     text-align: map-get($alinea, centro);
     margin: map-get($margenes, marg4) map-get($margenes, marg0);
+    font-weight: bold;
     }
     img{
         border-radius: 5px;
