@@ -11,7 +11,7 @@
   justify-content: start;
   align-content: flex-end; }
   .busqueda__form select {
-    margin: 4% 0%; }
+    margin: 1% 0%; }
 
 .formvende {
   display: flex;
@@ -21,7 +21,7 @@
   text-align: center; }
 
 .formvende__inputtext {
-  margin: 4% 5%;
+  margin: 1% 5%;
   color: black;
   font-size: medium;
   width: 60%; }
@@ -34,7 +34,7 @@
   text-align: start; }
 
 .formvende__check, .formvende__select {
-  margin: 2% 0%; }
+  margin: 1% 0%; }
 
 .formvende__select {
   font-style: italic;
@@ -151,7 +151,8 @@
 
 .cuerpocontacto__acordion button {
   color: #314ff7;
-  font-weight: bolder; }
+  font-weight: bolder;
+  font-size: 60%; }
 
 .cuerpocontacto__acordion p {
   font-weight: bold;
@@ -239,7 +240,7 @@
 
 .busquedaresults__card {
   margin: 3% 0%;
-  width: 20rem; }
+  width: 24rem; }
   .busquedaresults__card h5 {
     color: #314ff7;
     font-weight: bold;
@@ -273,6 +274,12 @@
     flex-direction: row; }
   .busquedaresults__card {
     width: 17rem; }
+  .testers__color {
+    background-color: white; }
+    .testers__color h4 {
+      color: #314ff7; }
+    .testers__color p {
+      color: black; }
   .menudis {
     display: flex;
     flex-direction: row;

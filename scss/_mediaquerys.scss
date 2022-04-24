@@ -45,8 +45,15 @@
                 width: 17rem;
         }
 
-        
-
+        .testers__color{
+                background-color: white;
+                h4{
+                        color: $colorprincipal;
+                }
+                p{
+                        color: black;
+                }
+        }
         .menudis {
                 @include dflex(flex, row,wrap);
                 justify-content: map-get($alinea , fin );
