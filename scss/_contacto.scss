@@ -22,14 +22,18 @@
 
 .cuerpocontacto__acordion{
                         h2{
-                            color: rgb(49, 79, 247);
-                            background-color: green;
+                            color: $colorprincipal;
+                            
                         }
                         button{
-                            color: rgb(49, 79, 247);
+                            color: $colorprincipal;
                             font-weight: bolder;
                             
                             }
+                        p{
+                            font-weight: bold;
+                            font-size: 110%;
+                        }
 }
 
 .contacto__textarea {

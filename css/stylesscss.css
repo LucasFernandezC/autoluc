@@ -4,6 +4,43 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
+.busqueda__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-content: flex-end; }
+  .busqueda__form select {
+    margin: 4% 0%; }
+
+.formvende {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center; }
+
+.formvende__inputtext {
+  margin: 4% 5%;
+  color: black;
+  font-size: medium;
+  width: 60%; }
+
+.ordenchecks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  text-align: start; }
+
+.formvende__check, .formvende__select {
+  margin: 2% 0%; }
+
+.formvende__select {
+  font-style: italic;
+  width: 60%;
+  color: black; }
+
 .pie {
   background-color: #314ff7;
   color: aliceblue;
@@ -30,7 +67,7 @@
 .cabeza {
   background-color: #314ff7; }
   .cabeza img {
-    margin: 1%; }
+    margin: 2%; }
   .cabeza h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: end;
@@ -57,13 +94,14 @@
   flex-wrap: wrap; }
   .cuerporeview h2 {
     text-align: center;
-    margin: 3% 1% 3% 1%;
+    margin: 3% 1%;
     font-weight: bolder; }
 
 .testers {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  border-color: black; }
   .testers p {
     text-align: center;
     margin: 2% 1%; }
@@ -71,14 +109,22 @@
     text-align: center;
     margin: 3% 1%;
     font-weight: bold;
-    color: #1159df; }
+    color: #314ff7; }
   .testers a {
     text-align: center; }
   .testers img {
-    align-self: center; }
+    align-self: center;
+    margin-bottom: 2%; }
   .testers iframe {
     align-self: center;
     margin: 2% 0%; }
+
+.testers__color {
+  background-color: #314ff7; }
+  .testers__color h4 {
+    color: white; }
+  .testers__color p {
+    color: white; }
 
 .cuerpocontacto {
   display: flex;
@@ -101,12 +147,15 @@
     align-content: space-between; }
 
 .cuerpocontacto__acordion h2 {
-  color: #314ff7;
-  background-color: green; }
+  color: #314ff7; }
 
 .cuerpocontacto__acordion button {
   color: #314ff7;
   font-weight: bolder; }
+
+.cuerpocontacto__acordion p {
+  font-weight: bold;
+  font-size: 110%; }
 
 .contacto__textarea, .contacto__inputtext {
   width: 100%;
@@ -130,9 +179,20 @@
     font-weight: bolder; }
 
 .nosotros {
-  margin: 2%; }
+  margin: 2%;
+  text-align: center; }
   .nosotros h2 {
     font-weight: bolder; }
+
+.cuadrado {
+  margin: 0px;
+  width: inherit; }
+
+.tarjetanosotros {
+  width: 25rem; }
+  .tarjetanosotros h5 {
+    font-weight: bold;
+    color: #314ff7; }
 
 .nosotros__img {
   width: 100%;
@@ -159,39 +219,9 @@
     margin: 4% 0%;
     font-weight: bold; }
   .vende img {
-    border-radius: 5px;
+    border-radius: 5%;
+    width: 90%;
     margin: auto; }
-
-.formvende {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center; }
-
-.formvende__inputtext {
-  margin: 1% 5%;
-  color: black;
-  font-size: medium; }
-
-.formvende__inputtexttext {
-  width: 350px; }
-
-.formvende__check, .formvende__select {
-  margin: 1% 0%;
-  font-size: smaller; }
-
-.formvende__select {
-  font-style: italic;
-  width: 150px;
-  color: black; }
-
-.busqueda__form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: start;
-  align-content: flex-end; }
 
 .busqueda__barra {
   margin: 3%;
@@ -208,11 +238,21 @@
   justify-content: space-evenly; }
 
 .busquedaresults__card {
-  margin: 3% 0%; }
+  margin: 3% 0%;
+  width: 20rem; }
+  .busquedaresults__card h5 {
+    color: #314ff7;
+    font-weight: bold;
+    text-align: center; }
 
-@media screen and (max-width: 500px) {
-  .busquedaresults {
-    flex-direction: column; } }
+@media screen and (max-width: 1024px) {
+  .testers iframe {
+    width: auto;
+    height: auto; }
+  .busqueda__form label {
+    font-size: medium; }
+  .tarjetanosotros {
+    width: 20rem; } }
 
 @media screen and (max-width: 770px) {
   .busqueda__imagen {
@@ -220,22 +260,26 @@
     width: 50px; }
   .busqueda__barra {
     margin: 1%;
-    width: auto; }
+    width: 90%; }
   .busqueda__form {
-    text-align: center;
-    align-items: center;
+    text-align: start;
+    align-items: start;
     font-size: medium; }
+    .busqueda__form select {
+      margin: 1% 0%; }
   .busqueda__form__select {
     font-size: small; }
   .busquedaresults {
     flex-direction: row; }
+  .busquedaresults__card {
+    width: 17rem; }
   .menudis {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: end; }
     .menudis a {
-      font-size: small;
+      font-size: large;
       padding: 0rem; }
   .vende img {
     display: none; }
@@ -244,8 +288,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; }
-  .formvende__inputtexttext {
-    width: 250px; }
   .cabeza {
     display: flex;
     flex-direction: row;
@@ -260,3 +302,18 @@
   .testers iframe {
     width: auto;
     height: auto; } }
+
+@media screen and (max-width: 500px) {
+  .busquedaresults {
+    flex-direction: column; }
+  .formvende__select {
+    width: 90%; }
+  .formvende__inputtext {
+    width: 90%; }
+  .busquedaresults__card {
+    width: 18rem; }
+  .tarjetanosotros {
+    width: 18rem; }
+  .busqueda__form {
+    text-align: center;
+    align-items: center; } }

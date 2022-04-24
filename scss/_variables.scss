@@ -8,6 +8,7 @@
 
 $tampad: 770px;
 $tamcel: 500px;
+$tamlap: 1024px;
 
 $margenes: (
         marg0: 0%,
@@ -29,3 +30,5 @@ $alinea: (
         flex-direction: $direccion;
         flex-wrap: $wrap;
 }
+
+$colorprincipal: rgb(49, 79, 247);

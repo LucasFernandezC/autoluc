@@ -1,5 +1,5 @@
 .pie {
-    background-color: rgb(49, 79, 247);
+    background-color: $colorprincipal;
     color: aliceblue;
     padding: map-get($margenes, marg0);
     text-align: center;

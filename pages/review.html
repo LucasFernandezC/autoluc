@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="es"><!-- esto es un comentario -->
-<head> <!--cabecera. datos del sitio, no visibles-->
+<html lang="es">
+<!-- esto es un comentario -->
+
+<head>
+    <!--cabecera. datos del sitio, no visibles-->
     <meta charset="UTF-8"><!-- compatibilidad con ñ y caracteres especiales-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configuracion para adpatacion a dispositivos-->
-    <meta name="description" content="Te recomendamos los mejores portales para que puedas ver a detalle, y evaluado por expertos, tu próximo auto">
-    <meta name="keywords" content="agencia, auto, autos, calidad, garantizados, autoluc, mecanica, opinion, test, testers, analisis, pruebas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--configuracion para adpatacion a dispositivos-->
+    <meta name="description"
+        content="Te recomendamos los mejores portales para que puedas ver a detalle, y evaluado por expertos, tu próximo auto">
+    <meta name="keywords"
+        content="agencia, auto, autos, calidad, garantizados, autoluc, mecanica, opinion, test, testers, analisis, pruebas">
     <title>AutoLuc - Conoce a detalle el auto que queres</title>
     <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -13,6 +19,7 @@
     <link rel="stylesheet" href="../css/stylesscss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+
 <body class="container-fluid">
     <header class="cabeza row">
         <div class="col-lg-5 col-sm-12 float-start headimage">
@@ -31,11 +38,12 @@
                     </button>
                     <div class="collapse navbar-collapse menunav" id="navbarNavAltMarkup">
                         <div class="navbar-nav menulinks">
-                            <a class="nav-link active" aria-current="page" href="../index.html" style="color: aliceblue;">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html"
+                                style="color: aliceblue;">Home</a>
                             <a class="nav-link" href="../pages/vende.html" style="color: aliceblue;">Cotiza tu auto</a>
                             <a class="nav-link" href="../pages/review.html" style="color: aliceblue;">Test</a>
-                            <a class="nav-link" href="../pages/nosotros.html"style="color: aliceblue;">Conocenos</a>
-                            <a class="nav-link" href="../pages/contacto.html"style="color: aliceblue;">Contacto</a>
+                            <a class="nav-link" href="../pages/nosotros.html" style="color: aliceblue;">Conocenos</a>
+                            <a class="nav-link" href="../pages/contacto.html" style="color: aliceblue;">Contacto</a>
                         </div>
                     </div>
                 </div>
@@ -44,44 +52,55 @@
     </header>
     <main class="cuerporeview">
         <h2>En esta sección te vamos a contar donde ver criticas confiables del auto que más te gusta</h2>
-        <section class="testers">
-            <h4>Autoblog - Motor1 Ar</h4>
-            <img src="../images/motor1_ok.jpg" alt="Logo de Autoblog">
-            <p>
-                Este portal cuenta con la total confianza de todos los que hacemos este sitio. 
-                En el encontraras criticas totalmente independientes, detalles técnicos relevantes y, de paso, bastante humor.
-            </p>
-            <a href="https://ar.motor1.com">Autoblog Web</a>
-        </section>
-        <section class="testers">
-            <h4>Matías Antíco</h4>
-            <img src="../images/tnautos.jpg" alt="Logo de TN Autos">
-            <p>
-                Otra buena opción para obtener información de tu próximo auto es TN Autos con su conductor Matías Antíco. 
-                Aquí encontraras test concisos con los puntos importantes de cada auto. Otra vez la cuota de humor no va a faltar.
-                Para simplificarte la búsqueda te dejamos un enlace a su canal de youtube.
-            </p>
-            <a href="https://www.youtube.com/c/MatiasAnticoTV/featured">Canal de Matías Antíco</a>
-        </section>
-        <section class="testers">
-            <h4>Auto al Día</h4>
-            <img src="../images/autoaldia.png" alt="Logo de AutoAlDia">
-            <p>
-                Auto al día es otra opción para conocer a detalle cada vehículo. Los test duran 30 minutos aproximadamente y se abordan 
-                todos los ángulos del mismo.
-                Desde esta redacción creemos sus criticas no siempre son del todo imparciales, pero tenemos que destacarlo como un medio
-                relevante en la industria automotriz.
-            </p>
-            <a href="https://autoaldia.tv/test/">Auto al Día Web</a>
-        </section>
-        <section class="testers">
-            <h4>Que ver a la hora de comprar un auto usado</h4>
-            <p>
-                Por último queremos disponibilizar un video que nos puede servir de guía a la hora de adquirir un vehículo usado. Recomendamos fuertemente 
-                verlo antes de concretar la compra del nuevo auto.
-            </p>
-            <iframe width="600px" height="450px" src="https://www.youtube.com/embed/gMpHpbTtDYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+        <div class="row">
+            <section class="testers testers__color col-lg-6 col-md-12">
+                <h4 class="text-decoration-underline">Autoblog - Motor1 Ar</h4>
+                <p>
+                    Este portal cuenta con la total <strong>confianza</strong> de todos los que hacemos este sitio.
+                    En el encontraras criticas totalmente independientes, detalles técnicos relevantes y, de paso,
+                    bastante humor.
+                </p>
+                <a href="https://ar.motor1.com" target="blank"><img src="../images/motor1_ok.jpg" alt="Logo de Autoblog"></a>
+            </section>
+            <section class="testers col-lg-6 col-md-12">
+                <h4 class="text-decoration-underline">Matías Antíco</h4>
+                <p>
+                    Otra buena opción para obtener información de tu próximo auto es <strong>TN Autos</strong> con su conductor <strong>Matías
+                    Antíco</strong>.
+                    Aquí encontraras <ins>test concisos</ins> con los puntos importantes de cada auto. Otra vez la cuota de humor
+                    no va a faltar.
+                    Para simplificarte la búsqueda te dejamos un enlace a su canal de <strong>YouTube</strong>.
+                </p>
+                <a href="https://www.youtube.com/c/MatiasAnticoTV/featured" target="blank"><img src="../images/tnautos.jpg" alt="Logo de TN Autos"></a>
+            </section>
+            <section class="testers col-lg-6 col-md-12 ">
+                <h4 class="text-decoration-underline">Auto al Día</h4>
+                <p>
+                    <strong>Auto al día</strong> es otra opción para conocer a detalle cada vehículo. Los test duran <ins>30 minutos
+                    aproximadamente</ins> y se abordan
+                    todos los ángulos del mismo.
+                    Desde esta redacción creemos que sus criticas no siempre son del todo <em>imparciales</em>, pero tenemos que
+                    destacarlo como un medio
+                    relevante en la industria automotriz.
+                </p>
+                <a href="https://autoaldia.tv/test/" target="blank"><img src="../images/autoaldia.png" alt="Logo de AutoAlDia"></a>
+            </section>
+            <section class="testers testers__color col-lg-6 col-md-12 ">
+                <h4 class="text-decoration-underline">Que ver a la hora de comprar un auto usado</h4>
+                <p>
+                    Por último queremos disponibilizar un video que nos puede servir de guía a la hora de <strong>adquirir un
+                    vehículo usado</strong>. Recomendamos <em>fuertemente</em>
+                    verlo antes de concretar la compra del nuevo auto.
+                </p>
+                <iframe width="500px" height="400px" src="https://www.youtube.com/embed/gMpHpbTtDYI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+        </div>
+    <div class="row">
+        <br/> 
+    </div>
     </main>
     <footer class="pie row">
         <div class="col-md-4 col-sm-12">
@@ -93,11 +112,13 @@
         </div>
         <div class="col-md-4 col-sm-12">
             <h4>Estas son nuestras redes</h4>
-            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png" alt="Logo de Facebook">
-            <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png" alt="Logo de Instagram">
-            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png"
+                    alt="Logo de Facebook">
+                <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png"
+                        alt="Logo de Instagram">
+                    <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
                         data-show-count="false">Follow @TwitterDev</a>
-            <script async src="https://platform.twitter.com/widgets.js" target="_blank"
+                    <script async src="https://platform.twitter.com/widgets.js" target="_blank"
                         charset="utf-8"></script>
         </div>
         <div class="col-md-4 col-sm-12">
@@ -112,4 +133,5 @@
     </div>
 
 </body>
+
 </html>

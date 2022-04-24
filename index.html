@@ -7,8 +7,10 @@
     <meta charset="UTF-8"><!-- compatibilidad con ñ y caracteres especiales-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AutoLuc ofrece un portal seguro, con un alto estándar de calidad en la compra de autos. Buscamos ser tu asesor de confianza!">
-    <meta name="keywords" content="agencia, auto, autos, calidad, compra, comprar, experiencia, garantizados, autoluc, mecanica, usados">
+    <meta name="description"
+        content="AutoLuc ofrece un portal seguro, con un alto estándar de calidad en la compra de autos. Buscamos ser tu asesor de confianza!">
+    <meta name="keywords"
+        content="agencia, auto, autos, calidad, compra, comprar, experiencia, garantizados, autoluc, mecanica, usados">
     <!--configuracion para adpatacion a dispositivos-->
     <title>AutoLuc - El portal de compraventa de Autos N°1</title>
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
@@ -102,7 +104,7 @@
             <div class="col-md-1 col-lg-2 col-sm-0"></div>
         </div>
         <div class="row">
-            <form action="" class="busqueda__form form-control-lg col-md-2">
+            <form action="" class="busqueda__form form-control-lg col-md-3">
                 <label for="marca">Marca</label>
                 <select name="marca" id="" class="form-select">
                     <option value="fo">FORD</option>
@@ -129,120 +131,135 @@
                     <option value="di">Diesel</option>
                     <option value="gn">GNC</option>
                 </select>
-                <label for="conf" class="form-check-label">Aire acondicionado</label>
-                <input type="checkbox" name="conf" id="" value="ac" class="form-check">
-                <label for="conf" class="form-check-label">Techo corredizo</label>
-                <input type="checkbox" name="conf" id="" value="tc" class="form-check">
-                <label for="conf" class="form-check-label">ESP</label>
-                <input type="checkbox" name="conf" id="" value="es" class="form-check">
-                <div class="btn-group-vertical gap-3">
-                    <input type="reset" value="Restablecer" class="btn btn-secondary">
-                    <input type="submit" value="Buscar" class="btn btn-primary">
+                <div class="ordenchecks">
+                    <div class="form-check formvende__check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Aire acondicionado
+                        </label>
+                    </div>
+                    <div class="form-check formvende__check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Techo corredizo
+                        </label>
+                    </div>
+                    <div class="form-check formvende__check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            ESP
+                        </label>
+                    </div>
                 </div>
+                    <div class="btn-group-vertical gap-3">
+                        <input type="reset" value="Restablecer" class="btn btn-secondary">
+                        <input type="submit" value="Buscar" class="btn btn-primary">
+                    </div>
+                
             </form>
-            <article id="results" class="col-md-10">
+            <article id="results" class="col-md-9">
                 <div class="busquedaresults">
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card " >
                             <img src="images/ford.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Ford 2016</h5>
+                                <h5 class="card-title titulotarjeta">Ford 2016</h5>
                                 <p class="card-text">5 puertas, naftero, en excelente estado!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card " >
                             <img src="images/vw.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">VW 2015</h5>
+                                <h5 class="card-title titulotarjeta">VW 2015</h5>
                                 <p class="card-text">3 puertas, GNC, única mano! Vení a verlo!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/ford.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Ford 2016</h5>
+                                <h5 class="card-title titulotarjeta">Ford 2016</h5>
                                 <p class="card-text">5 puertas, naftero, en excelente estado!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/vw.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">VW 2015</h5>
+                                <h5 class="card-title titulotarjeta">VW 2015</h5>
                                 <p class="card-text">3 puertas, GNC, única mano! Vení a verlo!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/fiat.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Fiat 2013</h5>
+                                <h5 class="card-title titulotarjeta">Fiat 2013</h5>
                                 <p class="card-text">5 puertas, naftero, en excelente estado!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/vw.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">VW 2015</h5>
+                                <h5 class="card-title titulotarjeta">VW 2015</h5>
                                 <p class="card-text">3 puertas, GNC, única mano! Vení a verlo!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/ford.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Ford 2016</h5>
+                                <h5 class="card-title titulotarjeta">Ford 2016</h5>
                                 <p class="card-text">5 puertas, naftero, en excelente estado!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/fiat.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Fiat 2015</h5>
+                                <h5 class="card-title titulotarjeta">Fiat 2015</h5>
                                 <p class="card-text">3 puertas, GNC, única mano! Vení a verlo!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/fiat.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Fiat 2013</h5>
+                                <h5 class="card-title titulotarjeta">Fiat 2013</h5>
                                 <p class="card-text">5 puertas, naftero, en excelente estado!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/vw.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">VW 2015</h5>
+                                <h5 class="card-title titulotarjeta">VW 2015</h5>
                                 <p class="card-text">3 puertas, GNC, única mano! Vení a verlo!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/ford.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
-                                <h5 class="card-title">Ford 2016</h5>
+                                <h5 class="card-title titulotarjeta">Ford 2016</h5>
                                 <p class="card-text">5 puertas, naftero, en excelente estado!</p>
                             </div>
                         </article>
                     </div>
                     <div class="">
-                        <article class="card busquedaresults__card" style="width: 18rem;">
+                        <article class="card busquedaresults__card" >
                             <img src="images/fiat.jpg" class="card-img-top" alt="Auto en venta">
                             <div class="card-body">
                                 <h5 class="card-title">Fiat 2015</h5>
@@ -264,8 +281,10 @@
         </div>
         <div class="col-md-4 col-sm-12">
             <h4>Estas son nuestras redes</h4>
-            <a href="https://www.facebook.com" target="_blank" class=""><img src="images/facebook.png" alt="Logo de Facebook">
-                <a href="https://www.instagram.com" target="_blank" class=""><img src="images/instagram.png" alt="Logo de Instagram">
+            <a href="https://www.facebook.com" target="_blank" class=""><img src="images/facebook.png"
+                    alt="Logo de Facebook">
+                <a href="https://www.instagram.com" target="_blank" class=""><img src="images/instagram.png"
+                        alt="Logo de Instagram">
                     <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
                         data-show-count="false">Follow @TwitterDev</a>
                     <script async src="https://platform.twitter.com/widgets.js" target="_blank"

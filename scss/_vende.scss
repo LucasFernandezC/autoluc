@@ -7,31 +7,8 @@
     font-weight: bold;
     }
     img{
-        border-radius: 5px;
+        border-radius: 5%;
+        width: 90%;
         margin: auto;
     }
-}
-.formvende {
-    @include dflex(flex, column,wrap);
-    align-items: map-get($alinea, centro);
-    text-align: map-get($alinea, centro);
-}
-.formvende__inputtext {
-    margin: map-get($margenes, marg1) map-get($margenes, marg5);
-    color: black;
-    font-size: medium;
-}
-.formvende__inputtexttext {
-    width: 350px;
-}
-
-.formvende__check {
-    margin: map-get($margenes, marg1) map-get($margenes, marg0);
-    font-size: smaller;
-}
-.formvende__select {
-    @extend .formvende__check;
-    font-style: italic;
-    width: 150px;
-    color: black;
 }

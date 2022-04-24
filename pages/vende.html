@@ -8,8 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--configuracion para adpatacion a dispositivos-->
-    <meta name="description" content="Te guiamos en todo el proceso de venta de tu auto. Vas a tener el control en todo momento del aviso y de las gestiones que realicemos por vos">
-    <meta name="keywords" content="agencia, auto, autos, calidad, experiencia, garantizados, autoluc, usados, vender, venta, vendo, vende">
+    <meta name="description"
+        content="Te guiamos en todo el proceso de venta de tu auto. Vas a tener el control en todo momento del aviso y de las gestiones que realicemos por vos">
+    <meta name="keywords"
+        content="agencia, auto, autos, calidad, experiencia, garantizados, autoluc, usados, vender, venta, vendo, vende">
     <title>AutoLuc - Te ayudamos a vender tu auto al mejor precio!</title>
     <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -52,9 +54,9 @@
         <h2>Te ayudamos a vender tu auto al mejor precio sin moverte de tu casa</h2>
         <form class="form-control-lg formvende col-lg-5" action="">
             <label for="nombre"> Ingrese Nombre y Apellido</label>
-            <input type="text" placeholder="Nombre y apellido" name="nombre" class="formvende__inputtext formvende__inputtexttext">
+            <input type="text" placeholder="Nombre y apellido" name="nombre" class="formvende__inputtext">
             <label for="mail"> Ingrese email</label>
-            <input type="email" name="mail" placeholder="ingrese email" class="formvende__inputtext formvende__inputtexttext">
+            <input type="email" name="mail" placeholder="ingrese email" class="formvende__inputtext">
             <label for="telefono">Ingrese su número de teléfono</label>
             <input type="tel" name="telefono" id="" placeholder="Sin el 15" class="formvende__inputtext">
             <label for="marca">Marca</label>
@@ -83,12 +85,26 @@
                 <option value="di">Diesel</option>
                 <option value="gn">GNC</option>
             </select>
-            <label for="conf">Aire acondicionado</label>
-            <input type="checkbox" name="conf" id="" value="ac" class="form-check formvende__check">
-            <label for="conf">Techo corredizo</label>
-            <input type="checkbox" name="conf" id="" value="tc" class="form-check formvende__check">
-            <label for="conf">ESP</label>
-            <input type="checkbox" name="conf" id="" value="es" class="form-check formvende__check">
+            <div class="ordenchecks">
+                <div class="form-check formvende__check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Aire acondicionado
+                    </label>
+                </div>
+                <div class="form-check formvende__check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Techo corredizo
+                    </label>
+                </div>
+                <div class="form-check formvende__check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        ESP
+                    </label>
+                </div>
+            </div>
             <label for="año">Seleccione el año</label>
             <select name="año" id="" class="form-select formvende__select">
                 <option value="2022">2022</option>
@@ -103,15 +119,14 @@
             <label for="km">Ingrese los Kilómetros</label>
             <input type="number" name="km" id="" class="formvende__inputtext">
             <label for="foto">Subir foto</label>
-            <input type="file" name="foto" id="" class="formvende__inputtext formvende__inputtexttext form-control">
+            <input type="file" name="foto" id="" class="formvende__inputtext form-control">
             <div class="btn-group-vertical gap-2">
                 <input type="reset" value="Restablecer" class="btn btn-secondary">
                 <input type="submit" value="Publicar" class="btn btn-primary">
             </div>
         </form>
         <div class="col-lg-7">
-            <img src="../images/foto1.jpg" alt="">
-
+            <img src="../images/foto1.jpg" alt="Imagen de fantasia">
         </div>
 
     </main>
@@ -125,11 +140,13 @@
         </div>
         <div class="col-md-4 col-sm-12">
             <h4>Estas son nuestras redes</h4>
-            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png" alt="Logo de Facebook">
-            <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png" alt="Logo de Instagram">
-            <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            <a href="https://www.facebook.com" target="_blank" class=""><img src="../images/facebook.png"
+                    alt="Logo de Facebook">
+                <a href="https://www.instagram.com" target="_blank" class=""><img src="../images/instagram.png"
+                        alt="Logo de Instagram">
+                    <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button"
                         data-show-count="false">Follow @TwitterDev</a>
-            <script async src="https://platform.twitter.com/widgets.js" target="_blank"
+                    <script async src="https://platform.twitter.com/widgets.js" target="_blank"
                         charset="utf-8"></script>
         </div>
         <div class="col-md-4 col-sm-12">

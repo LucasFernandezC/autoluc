@@ -8,14 +8,27 @@
     h2 {
     text-align: map-get($alinea, centro);
     margin: map-get($margenes, marg4);
-    color: rgb(49, 79, 247);
+    color: $colorprincipal;
     font-weight: bolder;
     }
 }
 .nosotros {
     margin: map-get($margenes, marg2);
+    text-align: center;
+    
     h2 {
         font-weight: bolder;
+    }
+}
+.cuadrado{
+            margin: 0px;
+            width: inherit;
+}
+.tarjetanosotros{
+    width: 25rem;
+    h5{
+        font-weight: bold;
+        color: $colorprincipal;
     }
 }
 .nosotros__img {

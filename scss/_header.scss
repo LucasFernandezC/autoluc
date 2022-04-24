@@ -1,7 +1,7 @@
 .cabeza {
-    background-color: rgb(49, 79, 247);
+    background-color: $colorprincipal;
         img {
-            margin: map-get($margenes, marg1);
+            margin: map-get($margenes, marg2);
         }
         h1 {    
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

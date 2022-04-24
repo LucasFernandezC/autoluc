@@ -1,8 +1,4 @@
-.busqueda__form {
-    @include dflex(flex, column,wrap);
-    justify-content: start;
-    align-content: flex-end;
-}
+
 .busqueda__barra {
     margin: map-get($margenes, marg3 );
     width: 50%;
@@ -17,4 +13,10 @@
 }
 .busquedaresults__card {
     margin: map-get($margenes, marg3) map-get($margenes, marg0);
+    width: 20rem;
+    h5{
+        color: $colorprincipal;
+        font-weight: bold;
+        text-align: center;
+    }
 }

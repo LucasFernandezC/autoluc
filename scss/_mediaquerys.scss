@@ -1,6 +1,19 @@
-@media screen and (max-width: $tamcel) {
-        .busquedaresults {
-                flex-direction: column;
+
+
+@media screen and (max-width: $tamlap) {
+        .testers{
+                iframe {
+                        width: auto;
+                        height: auto;
+                        }
+        }
+        .busqueda__form{
+                label{
+                        font-size: medium;
+                }
+        }
+        .tarjetanosotros{
+                width: 20rem;
         }
 }
 
@@ -11,12 +24,15 @@
         }
         .busqueda__barra {
                 margin: map-get($margenes, marg1);
-                width: auto;
+                width: 90%;
         }
         .busqueda__form {
-                text-align: map-get($alinea, centro);
-                align-items: map-get($alinea, centro);
+                text-align: map-get($alinea, inicio);
+                align-items: map-get($alinea, inicio);
                 font-size: medium;
+                select{
+                        margin: map-get($margenes, marg1) map-get($margenes, marg0);
+                }
         }
         .busqueda__form__select {
                 font-size: small;
@@ -24,27 +40,32 @@
         .busquedaresults {
                 flex-direction: row;
         }
+
+        .busquedaresults__card{
+                width: 17rem;
+        }
+
+        
+
         .menudis {
                 @include dflex(flex, row,wrap);
                 justify-content: end;
                 a{
-                font-size: small;
+                font-size: large;
                 padding: 0rem;
                 }
         }
         .vende{
                 img{
-                        
                         display: none; 
                 }
         }
+
         .headimage {
                 @include dflex(flex, row,wrap);
                 justify-content: center;
         }
-        .formvende__inputtexttext {
-                width: 250px;
-        }
+        
         .cabeza {
                 @include dflex(flex, row,wrap);
                 h1 {
@@ -64,4 +85,28 @@
                         }
         }
         
+}
+
+@media screen and (max-width: $tamcel) {
+        .busquedaresults {
+                flex-direction: column;
+        }
+        .formvende__select {
+                width: 90%;
+        }
+
+        .formvende__inputtext {
+                width: 90%;
+        }
+
+        .busquedaresults__card{
+                width: 18rem;
+        }
+        .tarjetanosotros{
+                width: 18rem;
+                }
+        .busqueda__form {
+                text-align: map-get($alinea, centro);
+                align-items: map-get($alinea, centro);
+        }
 }
