@@ -21,7 +21,7 @@
     }
 }
 .cuadrado{
-            margin: 0px;
+            margin: map-get($margenes, marg0);
             width: inherit;
 }
 .tarjetanosotros{

@@ -186,7 +186,7 @@
     font-weight: bolder; }
 
 .cuadrado {
-  margin: 0px;
+  margin: 0%;
   width: inherit; }
 
 .tarjetanosotros {
@@ -321,7 +321,13 @@
   .busquedaresults__card {
     width: 18rem; }
   .tarjetanosotros {
-    width: 18rem; }
+    width: 16rem; }
   .busqueda__form {
     text-align: center;
-    align-items: center; } }
+    align-items: center; }
+  .nosotros {
+    margin: 0%; }
+  .cuerpocontacto__acordion button {
+    font-size: 50%; }
+  .cuerpocontacto__acordion p {
+    font-size: 90%; } }

@@ -112,10 +112,21 @@
                 
         }
         .tarjetanosotros{
-                width: 18rem;
+                width: 16rem;
                 }
         .busqueda__form {
                 text-align: map-get($alinea, centro);
                 align-items: map-get($alinea, centro);
         }
+        .nosotros {
+                margin: map-get($margenes, marg0);
+        }
+        .cuerpocontacto__acordion{
+                button{
+                        font-size: 50%;
+                }
+                p{
+                        font-size: 90%;
+                }
+}
 }
