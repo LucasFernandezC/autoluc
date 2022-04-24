@@ -7,8 +7,21 @@
     font-weight: bold;
     }
     img{
-        border-radius: 5%;
+        border-radius: 2%;
         width: 90%;
         margin: auto;
+        
     }
 }
+
+.vende__fantasia{
+            background-color: $colorprincipal;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            img{
+                margin: map-get($margenes, marg4) map-get($margenes, marg2);
+            }
+}
+
+
+

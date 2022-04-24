@@ -220,9 +220,16 @@
     margin: 4% 0%;
     font-weight: bold; }
   .vende img {
-    border-radius: 5%;
+    border-radius: 2%;
     width: 90%;
     margin: auto; }
+
+.vende__fantasia {
+  background-color: #314ff7;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .vende__fantasia img {
+    margin: 4% 2%; }
 
 .busqueda__barra {
   margin: 3%;
