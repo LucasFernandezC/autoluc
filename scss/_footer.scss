@@ -2,7 +2,7 @@
     background-color: $colorprincipal;
     color: aliceblue;
     padding: map-get($margenes, marg0);
-    text-align: center;
+    text-align: map-get($alinea , centro );
     img {
     width: 30px;
     height: 30px;
@@ -22,6 +22,6 @@
     position: fixed;
     right: 10px;
     bottom: 10px;
-    text-align: center;
+    text-align: map-get($alinea , centro );
     padding: 3px;
 }

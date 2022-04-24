@@ -15,12 +15,12 @@
 
 .menudis{
     @include dflex(flex, row,wrap);
-    justify-content: end;
+    justify-content: map-get($alinea , fin );
     align-content: flex-end;
 }
 
 .menunav {
     font-weight: bold;
-    justify-content: end;
-    text-align: end;
+    justify-content: map-get($alinea , fin );
+    text-align: map-get($alinea , fin );
 }

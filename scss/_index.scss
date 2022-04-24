@@ -17,6 +17,6 @@
     h5{
         color: $colorprincipal;
         font-weight: bold;
-        text-align: center;
+        text-align: map-get($alinea , centro );
     }
 }

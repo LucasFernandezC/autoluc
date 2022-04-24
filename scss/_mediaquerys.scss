@@ -49,7 +49,7 @@
 
         .menudis {
                 @include dflex(flex, row,wrap);
-                justify-content: end;
+                justify-content: map-get($alinea , fin );
                 a{
                 font-size: large;
                 padding: 0rem;
@@ -63,7 +63,7 @@
 
         .headimage {
                 @include dflex(flex, row,wrap);
-                justify-content: center;
+                justify-content: map-get($alinea , centro );
         }
         
         .cabeza {
@@ -73,10 +73,10 @@
                 }
         }
         .pie {
-                justify-content: center;
-                justify-items: center;
-                justify-self: center;
-                text-align: center;
+                justify-content: map-get($alinea , centro );
+                justify-items: map-get($alinea , centro );
+                justify-self: map-get($alinea , centro );
+                text-align: map-get($alinea , centro );
         }
         .testers{
                 iframe {
@@ -90,6 +90,7 @@
 @media screen and (max-width: $tamcel) {
         .busquedaresults {
                 flex-direction: column;
+                align-items: map-get($alinea , centro );
         }
         .formvende__select {
                 width: 90%;
@@ -98,9 +99,10 @@
         .formvende__inputtext {
                 width: 90%;
         }
-
+        
         .busquedaresults__card{
                 width: 18rem;
+                
         }
         .tarjetanosotros{
                 width: 18rem;

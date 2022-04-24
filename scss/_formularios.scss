@@ -1,6 +1,6 @@
 .busqueda__form {
     @include dflex(flex, column, nowrap);
-    justify-content: start;
+    justify-content: map-get($alinea , inicio );
     align-content: flex-end;
     select{
         margin: map-get($margenes, marg4) map-get($margenes, marg0);
@@ -20,8 +20,8 @@
 }
 .ordenchecks{
     @include dflex(flex, column,nowrap);
-    justify-content: start;
-    text-align: start;
+    justify-content: map-get($alinea , inicio );
+    text-align: map-get($alinea , inicio);
 }
 
 .formvende__check {

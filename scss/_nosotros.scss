@@ -14,7 +14,7 @@
 }
 .nosotros {
     margin: map-get($margenes, marg2);
-    text-align: center;
+    text-align: map-get($alinea , centro );
     
     h2 {
         font-weight: bolder;

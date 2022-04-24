@@ -305,7 +305,8 @@
 
 @media screen and (max-width: 500px) {
   .busquedaresults {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .formvende__select {
     width: 90%; }
   .formvende__inputtext {

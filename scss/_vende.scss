@@ -1,6 +1,6 @@
 .vende{
-    align-items: center;
-    justify-items: center;
+    align-items: map-get($alinea , centro );
+    justify-items: map-get($alinea , centro );
     h2 {
     text-align: map-get($alinea, centro);
     margin: map-get($margenes, marg4) map-get($margenes, marg0);
