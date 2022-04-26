@@ -247,7 +247,7 @@
 
 .busquedaresults__card {
   margin: 3% 0%;
-  width: 24rem; }
+  width: 22rem; }
   .busquedaresults__card h5 {
     color: #314ff7;
     font-weight: bold;
@@ -260,7 +260,9 @@
   .busqueda__form label {
     font-size: medium; }
   .tarjetanosotros {
-    width: 20rem; } }
+    width: 20rem; }
+  .busquedaresults__card {
+    width: 18rem; } }
 
 @media screen and (max-width: 770px) {
   .busqueda__imagen {
