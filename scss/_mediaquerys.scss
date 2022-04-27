@@ -76,6 +76,12 @@
                 justify-content: map-get($alinea , centro );
         }
         
+        .cuadrado__fantasia{
+                        img{
+                                display: none;
+                        }
+        }
+
         .cabeza {
                 @include dflex(flex, row,wrap);
                 h1 {

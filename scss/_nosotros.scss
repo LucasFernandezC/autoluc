@@ -24,6 +24,19 @@
             margin: map-get($margenes, marg0);
             width: inherit;
 }
+
+.cuadrado__fantasia{
+                @include dflex(flex, column,wrap);
+                justify-content: map-get($alinea, centro );
+                align-items: center;
+                background-color: $colorprincipal;
+                margin: 0;
+                text-align: center;
+                
+                img{
+                    width: 90%;
+                }
+}
 .tarjetanosotros{
     width: 25rem;
     h5{
@@ -39,7 +52,7 @@
     margin: map-get($margenes, marg5) map-get($margenes, marg0);
     display: flex;
     justify-content: map-get($alinea, centro);
-    text-align: map-get($alinea, centro);;
+    text-align: map-get($alinea, centro);
 }
 .nosotrostestimoniales {
     @include dflex(flex, column,wrap);
